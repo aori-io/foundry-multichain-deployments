@@ -1,0 +1,22 @@
+[profile.default]
+optimizer_runs = 1_000_000
+verbosity = 1
+solc = "0.8.19"
+via_ir = true
+
+# Extreme Fuzzing CI Profile :P
+[profile.ci]
+fuzz_runs = 100_000
+verbosity = 4
+
+[rpc_endpoints]
+mainnet = "https://rpc.ankr.com/eth"
+sepolia = "https://rpc.ankr.com/eth_sepolia"
+arbitrum-sepolia = "https://arbitrum-sepolia.drpc.org"
+arbitrum = "https://arb1.arbitrum.io/rpc"
+avalanche-fuji = "https://rpc.ankr.com/avalanche_fuji"
+berachain-artio = "https://rpc.ankr.com/berachain_testnet"
+mode-sepolia = "https://sepolia.mode.network"
+optimism-sepolia = "https://rpc.ankr.com/optimism_sepolia"
+polygon = "https://polygon-rpc.com"
+sei-devnet = "https://evm-rpc-arctic-1.sei-apis.com"
